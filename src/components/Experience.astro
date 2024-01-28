@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+{
+    date: "Actualmente...",
+    title: "Desarrollador Web",
+    description:
+      "Construyo sitios dinamicos tanto en el backend como en el frontend para mayor interacción con el desarrollo para mejorar el rendimiento como la escalabilidad.",
+    link: "https://abelmachaca.github.io/Guayerd-CV/",
+  },
+  {
+    date: "Junio 2023 - Agosto 2023",
+    title: "Process Analysis - Cirion Technologies",
+    description:
+      'Contribuí al área de Infrastructure & Ops cross Support, participando en la revisión y actualización de procesos para mejorar la eficiencia y la calidad. Participé en reuniones de coordinación y elaboración de minutas. Donde se implemento el proyecto de "SPM ServiceNow".',
+  },
+]
+
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map(experiencie => (
+    <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+    </li>
+    ))
+  }
+  
+</ol>
