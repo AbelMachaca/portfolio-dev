@@ -3,6 +3,18 @@ import HTMLICON from "./icons/Html.astro";
 import CSSICON from "./icons/Css.astro";
 import LinkButton from "./LinkButton.astro";
 import GitHub from "./icons/GitHub.astro";
+import REACTICON from "./icons/React.astro"
+import NODEICON from "./icons/NodeJS.astro"
+import EXPRESSICON from "./icons/Express.astro"
+import MONGOICON from "./icons/Mongo.astro"
+import JAVASCRIPTICON from "./icons/JavaScript.astro"
+import FIREBASEICON from "./icons/Firebase.astro"
+import BOOTSTRAPICON from "./icons/Bootstrap.astro"
+import TYPESCRIPTICON from "./icons/TypeScript.astro"
+import VITEICON from "./icons/Vite.astro"
+
+
+
 const TAGS = {
   HTML: {
     name: "HTML",
@@ -14,8 +26,80 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: CSSICON,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#1A237E] text-white",
+    icon: REACTICON,
+  },
+  NODE: {
+    name: "NodeJS",
+    class: "bg-[#00a76a6a] text-white",
+    icon: NODEICON,
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-[#4b4a4a86] text-white",
+    icon: EXPRESSICON
+  },
+  MONGO: {
+    name: "MongoDB",
+    class: "bg-[#00ff6e6a] text-white",
+    icon: MONGOICON
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#8d9700d0] text-white",
+    icon: JAVASCRIPTICON
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#c68e15d0] text-white",
+    icon: FIREBASEICON
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#6d0083b9] text-white",
+    icon: BOOTSTRAPICON
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#003159] text-white",
+    icon: TYPESCRIPTICON
+  },
+  VITE: {
+    name: "Vite",
+    class: "bg-[#6c00f0b9] text-white",
+    icon: VITEICON
+  }
 };
 const PROJECTS = [
+{
+    title: "Empresas Socias Polo-IT",
+    description:
+      "Este proyecto busca que las personas que entren a este listado de las empresas socias del Polo-IT puedan conocer brevemente a qué se dedica la empresa y categorías a las que pertenece. Hay filtros en la página para que el usuario pueda filtrar a las empresas según “Producto o Servicio” y Categorías.",
+    link: "https://frontend-polo-it.onrender.com/",
+    github: "https://github.com/AbelMachaca/Polo-IT-Aceleradora",
+    image: "/projects/poloIT.webp",
+    tags: [TAGS.CSS,TAGS.JAVASCRIPT, TAGS.REACT, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGO],
+  },
+  {
+ title: "E-commerce TecnoConectados",
+ description:
+ "Un usuario puede ingresar y navegar por los productos e ir a sus detalles. Desde el detalle se puede ver la descripción, foto y precio e ingresarlo al carrito. Una vez que el carrito tiene al menos un producto, se puede visualizar un listado compacto de la orden con el precio total. Al clickear 'realizar compra' se guarda en la base de datos una orden que tiene todos los productos, la fecha y dar feedback del número de orden.",
+ link: "https://tecnoconectados-ecommerce.onrender.com/",
+ github: "https://github.com/AbelMachaca/React-Js-Machaca",
+ image: "/projects/tecnoConectados.webp",
+ tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.FIREBASE, ]
+  },
+  {
+    title: "To - Do",
+    description: 
+    "Desarrollé un TodoMVC utilizando React, TypeScript y Vite para un rendimiento optimizado. Incluye un linter para TypeScript + React, estilos personalizados, capacidad para listar, borrar y marcar como completados los TODOs, así como filtrar, mostrar el número de TODOs pendientes y borrar todos los completados. Cuenta con un Header interactivo que permite agregar, editar y eliminar TODOs de manera intuitiva.",
+    link: "https://todo-react-ts-617g.onrender.com/",
+    github: "https://github.com/AbelMachaca/ToDo-React-TS-Vite",
+    image: "/projects/toDo.webp",
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.VITE]
+  },
   {
     title: "La scaloneta",
     description:
@@ -23,16 +107,9 @@ const PROJECTS = [
     link: "https://abelmachaca.github.io/ProyectoFinalGuayerd/jugadores.html",
     github: "https://github.com/AbelMachaca/ProyectoFinalGuayerd",
     image: "/projects/svgl.webp",
-    tags: [TAGS.HTML, TAGS.CSS],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   },
-  {
-    title: "Empresas Socias Polo-IT",
-    description:
-      "Este proyecto busca que las personas que entren a este listado de las empresas socias del Polo-IT puedan conocer brevemente a qué se dedica la empresa y categorías a las que pertenece. Hay filtros en la página para que el usuario pueda filtrar a las empresas según “Producto o Servicio” y Categorías.",
-    link: "https://frontend-polo-it.onrender.com/",
-    image: "/projects/poloIT.webp",
-    tags: [TAGS.HTML, TAGS.CSS],
-  },
+  
 ];
 ---
 
